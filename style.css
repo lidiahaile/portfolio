@@ -43,4 +43,132 @@
 }
 .introduction .introduction__aboutme {
   text-align: start;
+}
+
+.technicalskills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.technicalskills .technicalskills__heading {
+  font-family: "Urbanist";
+  font-size: 30px;
+}
+.technicalskills .technicalskills__images {
+  width: 110%;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: 1fr 0.4fr 1fr 0.4fr 1fr 0.4fr;
+  grid-template-areas: "springboot java react" "sbcap jcap rcap" "bem scss javascript" "bcap scap jscap" "css3 html5 git" "ccap hcap gcap";
+  gap: 10px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--javascript {
+  grid-area: javascript;
+  width: 60px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--springboot {
+  grid-area: springboot;
+  width: 60px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--react {
+  grid-area: react;
+  width: 70px;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--bem {
+  grid-area: bem;
+  width: 60px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--scss {
+  grid-area: scss;
+  width: 70px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--java {
+  grid-area: java;
+  width: 80px;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--css3 {
+  grid-area: css3;
+  width: 60px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--html5 {
+  grid-area: html5;
+  width: 60px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--git {
+  grid-area: git;
+  width: 60px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--sbcap {
+  grid-area: sbcap;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--jcap {
+  grid-area: jcap;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--rcap {
+  grid-area: rcap;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--bcap {
+  grid-area: bcap;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--scap {
+  grid-area: scap;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--jscap {
+  grid-area: jscap;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--ccap {
+  grid-area: ccap;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--hcap {
+  grid-area: hcap;
+  margin: 0px;
+  padding: 0px;
+}
+.technicalskills .technicalskills__images .technicalskills__images--gcap {
+  grid-area: gcap;
+  margin: 0px;
+  padding: 0px;
 }/*# sourceMappingURL=style.css.map */
