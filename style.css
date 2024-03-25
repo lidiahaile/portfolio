@@ -233,4 +233,30 @@
   border: 2px solid black;
   cursor: pointer;
   text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: center;
+  width: 300px;
+  height: 15vh;
+  background-color: black;
+}
+.footer .footer__buttons {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+}
+.footer .footer__buttons--linkedin, .footer .footer__buttons--cv, .footer .footer__buttons--github {
+  width: 60px;
+  height: 60px;
+}
+.footer .footer__email {
+  text-align: center;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
