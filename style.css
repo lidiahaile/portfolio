@@ -214,10 +214,11 @@
   align-self: flex-start;
   margin: 0px;
   padding: 0px;
+  font-size: 15px;
 }
 .projects .projects__buttons .projects__buttons--code {
-  margin: 10px;
-  padding: 10px 20px;
+  margin: 5px;
+  padding: 8px 15px;
   border-radius: 10px;
   color: black;
   background-color: white;
@@ -225,8 +226,8 @@
   text-decoration: none;
 }
 .projects .projects__buttons .projects__buttons--preview {
-  margin: 10px;
-  padding: 10px 20px;
+  margin: 5px;
+  padding: 8px 15px;
   border-radius: 10px;
   color: black;
   border: 2px solid black;
