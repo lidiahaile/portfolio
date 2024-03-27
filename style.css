@@ -82,6 +82,8 @@
 .technicalskills .technicalskills__images {
   width: 80%;
   height: 40vh;
+  display: flex;
+  justify-content: center;
   display: grid;
   grid-template-columns: 80px 80px 80px;
   grid-template-rows: 1fr 0.4fr 1fr 0.4fr 1fr 0.4fr;
@@ -203,7 +205,7 @@
   flex-direction: column;
   align-items: center;
   align-self: center;
-  width: 90%;
+  width: 100vw;
   height: auto;
 }
 .projects .projects__header {
@@ -263,9 +265,9 @@
 .footer {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  align-items: center;
   justify-content: center;
-  width: 360px;
+  width: 100vw;
   height: 15vh;
   margin: 0%;
   padding: 0%;
@@ -280,8 +282,8 @@
   padding: 0%;
 }
 .footer .footer__buttons--linkedin, .footer .footer__buttons--cv, .footer .footer__buttons--github {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
 }
 .footer .footer__email {
   text-align: center;

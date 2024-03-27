@@ -109,6 +109,8 @@ background-color: $color-primary;
   .technicalskills__images{
         width: 80%;
         height: 40vh;
+        display: flex;
+        justify-content: center;
         display: grid;
         grid-template-columns: 80px 80px 80px;
         grid-template-rows: 1fr 0.4fr 1fr 0.4fr 1fr 0.4fr;
@@ -259,7 +261,7 @@ background-color: $color-primary;
     flex-direction: column;
     align-items: center;
     align-self: center;
-    width: 90%;
+    width: 100vw;
     height:auto ;
     
 
@@ -334,9 +336,9 @@ background-color: $color-primary;
 .footer{
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
-    justify-content: center;
-    width: 360px;
+   align-items: center;
+   justify-content: center;
+    width: 100vw;
     height: 15vh;
     margin: 0%;
     padding: 0%;
@@ -352,8 +354,8 @@ background-color: $color-primary;
 }
 
 .footer__buttons--linkedin, .footer__buttons--cv, .footer__buttons--github{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
 }
 
 .footer__email{
