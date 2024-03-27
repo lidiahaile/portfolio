@@ -1,0 +1,61 @@
+@use "./variable. " as *;
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: $color-primary;
+
+
+
+    .navigation_fullname {
+        font-size: 20px;
+        color: $color-secondary;
+    }
+
+    .navigation__buttons {
+        display: flex;
+        color: $color-secondary;
+
+        .navigation__buttons--getintouch {
+            border: 1px solid $color-secondary;
+            border-radius: 5px;
+
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;
+    margin: 0%;
+    padding: 0%;
+    background-color: $color-primary;
+
+    .footer__buttons {
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .footer__buttons--linkedin,
+    .footer__buttons--cv,
+    .footer__buttons--github {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer__email {
+        text-align: center;
+        color: $color-secondary;
+    }
+}

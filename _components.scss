@@ -1,0 +1,310 @@
+@use "./variable. " as *;
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    width: 100vw;
+    height: 50vh;
+
+
+    .header__text--greeting {
+        font-family: $font-body;
+        text-align: start;
+        align-self: flex-start;
+
+    }
+
+    .header__text--introduction {
+        font-family: $font-header;
+        font-size: 50px;
+        text-align: start;
+
+    }
+
+    .header__image {
+        width: 100px;
+        height: 100px;
+
+    }
+}
+
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    width: 100vw;
+    height: auto;
+
+    .introduction__header {
+        font-family: $font-header;
+        font-size: 30px;
+    }
+
+    .introduction__profilephoto {
+        width: 90%;
+    }
+
+    .introduction__aboutme {
+        text-align: start;
+    }
+}
+
+
+.technicalskills {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+
+    .technicalskills__heading {
+        font-family: $font-header;
+        font-size: 30px;
+    }
+
+    .technicalskills__images {
+        width: 80%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 80px 80px 80px;
+        grid-template-rows: 1fr 0.4fr 1fr 0.4fr 1fr 0.4fr;
+        grid-template-areas:
+            " springboot java react"
+            "  sbcap jcap rcap"
+            " bem scss javascript"
+            " bcap scap jscap"
+            " css3 html5 git"
+            " ccap hcap gcap"
+        ;
+        gap: 10px;
+        text-align: start;
+
+
+
+        .technicalskills__images--javascript {
+            grid-area: javascript;
+            width: 60px;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .technicalskills__images--springboot {
+            grid-area: springboot;
+            width: 60px;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .technicalskills__images--react {
+            grid-area: react;
+            width: 70px;
+            height: 60px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .technicalskills__images--bem {
+            grid-area: bem;
+            width: 60px;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .technicalskills__images--scss {
+            grid-area: scss;
+            width: 70px;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .technicalskills__images--java {
+            grid-area: java;
+            width: 80px;
+            height: 60px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .technicalskills__images--css3 {
+            grid-area: css3;
+            width: 60px;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .technicalskills__images--html5 {
+            grid-area: html5;
+            width: 60px;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .technicalskills__images--git {
+            grid-area: git;
+            width: 60px;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .technicalskills__images--sbcap {
+            grid-area: sbcap;
+            margin: 0px;
+            padding: 0px;
+
+
+        }
+
+        .technicalskills__images--jcap {
+            grid-area: jcap;
+            margin: 0px;
+            padding: 0px;
+
+
+        }
+
+        .technicalskills__images--rcap {
+            grid-area: rcap;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .technicalskills__images--bcap {
+            grid-area: bcap;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .technicalskills__images--scap {
+            grid-area: scap;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .technicalskills__images--jscap {
+            grid-area: jscap;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .technicalskills__images--ccap {
+            grid-area: ccap;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .technicalskills__images--hcap {
+            grid-area: hcap;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .technicalskills__images--gcap {
+            grid-area: gcap;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 100vw;
+    height: auto;
+
+
+    .projects__header {
+        text-align: center;
+        font-size: 30px;
+        font-family: $font-header;
+    }
+
+    .projects__image {
+        width: 90%;
+        height: auto;
+    }
+
+    .projects__typeofproject {
+        font-family: $font-body;
+        text-align: start;
+        align-self: flex-start;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .projects__title {
+        font-family: $font-header;
+        align-self: flex-start;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .projects__paragraph {
+        text-align: start;
+        margin: 5px;
+        padding: 5px;
+
+    }
+
+    .projects__buttons {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+
+        .projects__buttons--code {
+
+            margin: 5px;
+            padding: 8px 15px;
+            border-radius: 10px;
+            color: $color-primary;
+            background-color: $color-secondary;
+            border: 2px solid $color-primary;
+            text-decoration: none;
+        }
+
+        .projects__buttons--preview {
+            margin: 5px;
+            padding: 8px 15px;
+            border-radius: 10px;
+            color: $color-primary;
+            border: 2px solid $color-primary;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+    }
+
+}
+
