@@ -5,6 +5,26 @@
   box-sizing: border-box;
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: black;
+}
+.navigation .navigation_fullname {
+  font-size: 20px;
+  color: white;
+}
+.navigation .navigation__buttons {
+  display: flex;
+  color: white;
+}
+.navigation .navigation__buttons .navigation__buttons--getintouch {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -14,15 +34,19 @@
   width: 90%;
   height: 50vh;
 }
-.header .header__greeting {
+.header .header__text--greeting {
   font-family: "sans-serif", "Roboto";
   text-align: start;
   align-self: flex-start;
 }
-.header .header__introduction {
+.header .header__text--introduction {
   font-family: "Urbanist";
   font-size: 50px;
   text-align: start;
+}
+.header .header__image {
+  width: 100px;
+  height: 100px;
 }
 
 .introduction {
@@ -63,6 +87,7 @@
   grid-template-rows: 1fr 0.4fr 1fr 0.4fr 1fr 0.4fr;
   grid-template-areas: " springboot java react" "  sbcap jcap rcap" " bem scss javascript" " bcap scap jscap" " css3 html5 git" " ccap hcap gcap";
   gap: 10px;
+  text-align: start;
 }
 .technicalskills .technicalskills__images .technicalskills__images--javascript {
   grid-area: javascript;
@@ -200,7 +225,6 @@
 .projects .projects__title {
   font-family: "Urbanist";
   align-self: flex-start;
-  text-align: center;
   margin: 0px;
   padding: 0px;
 }
@@ -262,4 +286,93 @@
 .footer .footer__email {
   text-align: center;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+  .header .header__text {
+    width: 40%;
+    height: 400px;
+  }
+  .header .header__image {
+    align-self: center;
+    width: 600px;
+    height: 350px;
+  }
+  .introduction__header {
+    display: none;
+  }
+  .introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
+  }
+  .introduction .introduction__profilephoto {
+    width: 600px;
+    height: 300px;
+  }
+  .technicalskills {
+    display: flex;
+    flex-direction: column;
+  }
+  .technicalskills .technicalskills__images {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-areas: " springboot java react  bem scss javascript css3 html5 git " "sbcap jcap rcap bcap scap jscap ccap hcap gcap ";
+    gap: 5px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .projects .projects__firstpart {
+    display: flex;
+    flex-direction: row;
+  }
+  .projects .projects__secondpart {
+    display: flex;
+    flex-direction: row;
+  }
+  .projects .projects__image {
+    width: 300px;
+    height: 150px;
+  }
+  .footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .footer__email, .footer .footer__buttons {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  .header__image {
+    display: none;
+  }
+  .introduction__header2 {
+    display: none;
+  }
+  .projects__secondpart {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

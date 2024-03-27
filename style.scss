@@ -4,13 +4,39 @@ $font-body: "sans-serif" , "Roboto";
 $font-header: "Urbanist";
 $color-primary: black;
 $color-secondary: white;
-$color-tertiary: #f0a500;
+$color-tertiary: rgb(174, 210, 246);
 
 *{
     margin:5px;
     padding: 5px;
     box-sizing: border-box;
 
+}
+
+.navigation{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100vw;
+background-color: $color-primary;
+
+
+
+   .navigation_fullname{
+    font-size: 20px;
+    color: $color-secondary;
+  }
+ 
+  .navigation__buttons{
+  display: flex;
+  color: $color-secondary;
+
+    .navigation__buttons--getintouch {
+       border: 1px solid $color-secondary;
+        border-radius: 5px;
+    
+    }
+  }
 }
 
 .header {
@@ -22,20 +48,26 @@ $color-tertiary: #f0a500;
     width: 90%;
     height: 50vh;
 
-    .header__greeting{
+
+    .header__text--greeting{
         font-family: $font-body;
         text-align: start;
         align-self: flex-start;
        
     }
 
-    .header__introduction{
+    .header__text--introduction{
         font-family: $font-header;
         font-size: 50px;
         text-align: start;
 
     }
-
+  
+  .header__image{
+    width:100px;
+    height: 100px;
+  
+  }
 }
 
 
@@ -89,6 +121,7 @@ $color-tertiary: #f0a500;
         " ccap hcap gcap"
         ;
         gap:10px;
+        text-align: start;
     
         
         
@@ -254,7 +287,6 @@ $color-tertiary: #f0a500;
     .projects__title{
         font-family: $font-header;
         align-self: flex-start;
-        text-align: center;
         margin: 0px;
         padding: 0px;
     }
@@ -330,8 +362,114 @@ $color-tertiary: #f0a500;
 }
 }
 
+@media screen and (min-width: 768px) {
+   
+.header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width:100%;
+        height: 400px;
+
+    .header__text{
+        width: 40%;
+        height: 400px;
+    }
+    .header__image{
+        align-self: center;
+       width: 600px;
+       height: 350px;
+    }
+}
 
 
+.introduction__header{
+     display: none;    
+}
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
 
+    .introduction__profilephoto{
+        width: 600px;
+        height: 300px;
+    
+}
+}
 
+.technicalskills {
+    display: flex;
+    flex-direction: column;
+    .technicalskills__images{
+        height: auto;
+        display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.1fr;
+        grid-template-areas:
+            " springboot java react  bem scss javascript css3 html5 git "
+            "sbcap jcap rcap bcap scap jscap ccap hcap gcap "
+            ;
+        gap: 5px;
+            
+    }
+}
+.projects{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100vw;
+   
 
+    .projects__firstpart{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projects__secondpart{
+        display: flex;
+        flex-direction: row;
+    }
+    .projects__image{
+        width: 300px;
+        height: 150px;
+
+    } 
+}
+.footer{
+    width: 100vw;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   .footer__email, .footer__buttons{
+    margin: 5px;
+    padding: 5px;
+   }
+   
+}
+}
+
+@media screen and (max-width: 768px) {
+    .navigation{
+        display: none;
+    }
+
+    .header__image{
+        display: none;
+    }
+
+    .introduction__header2{
+        display: none;
+    }
+
+    .projects__secondpart{
+    display: none;
+    }
+
+    
+    
+}
